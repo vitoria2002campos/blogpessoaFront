@@ -11,7 +11,7 @@
 
 <i class="fa fa-user" aria-hidden="true"></i>
 
-<input type="text" placeholder="Nome" name="" id="nome">
+<input [(ngModel)]='user.nome' type="text" placeholder="Nome" name="nome" id="nome" >
 
 </div>
 
@@ -19,7 +19,7 @@
 
     <i class="fa fa-envelope" aria-hidden="true"></i>
     
-    <input type="text" placeholder="Usuário" name="" id="usuario">
+    <input [(ngModel)]='user.usuario' type="text" placeholder="Usuário" name="" id="usuario">
     
     </div>
 
@@ -27,7 +27,7 @@
 
     <i class="fa fa-camera-retro" aria-hidden="true"></i>
     
-    <input type="text" placeholder="Link foto" name="foto" id="foto">
+    <input [(ngModel)]='user.foto' type="text" placeholder="Link foto" name="foto" id="foto">
     
     </div>
 
@@ -44,7 +44,7 @@
 
     <i class="fa fa-check" aria-hidden="true"></i>
     
-    <input type="password" placeholder="Senha" name="senha" id="confirmSenha">
+    <input [(ngModel)]='user.senha' type="password" placeholder="Senha" name="senha" id="confirmSenha">
     
     </div>
     <br>
