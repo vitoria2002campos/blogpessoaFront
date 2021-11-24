@@ -36,7 +36,7 @@
 
 <i class="fa fa-unlock-alt" aria-hidden="true"></i>
 
-<input type="password" placeholder="Senha" name="senha" id="senha">
+<input (input)='confirmSenha($event)' type="password" placeholder="Senha" name="senha" id="senha">
 
 </div>
 
@@ -51,7 +51,7 @@
 
     
 
-       <div class="form-check">
+       <div class="form-check" (change)='tipoUser($event)'>
            
         <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" 
         value="admin" checked>
@@ -73,25 +73,19 @@
      <br><br>
 
         
-
-<input class="btn"
-type="button" name="Cadastrar" value="Cadastrar">
-        <br><br>
-<input routerLink='/entrar' class ="btnCancelar"
+<div class="d-flex align-items">
+  <input  class="btn m-3 "
+type="button" name="Cadastrar" value="Cadastrar" (click)='cadastrar()' >
+        
+<input routerLink='/entrar' class ="btnCancelar m-3" 
 type="button" name="Cancelar" value="Cancelar">
 
-<hr class="mt-5 mb-5">
+</div>
 
-<p class="text-center">
 
-Não tem uma conta? <a href="">Cadastre-se</a>
-
-</p>
 
 </div>
 
-<div>
-  <h1>ola</h1>
-</div>
+
 
 

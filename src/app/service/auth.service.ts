@@ -14,12 +14,12 @@ export class AuthService {
   ) { }
 
   entrar(userLogin: UserLogin): Observable<UserLogin>{
-    return this.http.post<UserLogin>('http://localhost:8080/usuarios/logar', userLogin)
+    return this.http.post<UserLogin>('https://vitoriablogpessoal.herokuapp.com/usuarios​/logar', userLogin)
     //Para o funcionar entrar o meu servidor precisa receber como parametro um objeto do tipo  UserLogin que é a model, o metodo vai retornar desse http o metodo post e o caminho que é localhost.
     //Observable = para o angular identificar o userlogin e dar um post nele
   }
 
   cadastrar(user:User):Observable<User>{
-    return this.http.post<User>('http://localhost:8080/usuarios/cadastrar' , user)
+    return this.http.post<User>('https://vitoriablogpessoal.herokuapp.com/usuarios​/cadastrar' , user)
   }
 }
